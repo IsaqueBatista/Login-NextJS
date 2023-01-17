@@ -15,7 +15,7 @@ interface User {
   password: string
 }
 
-export default function Home(props: HomeProps) {
+export default function Home() {
   const [user, setUser] = React.useState({
     email: '',
     name: ''
