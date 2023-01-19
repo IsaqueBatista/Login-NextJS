@@ -29,7 +29,7 @@ export default function Register() {
         /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/,
         'Necessário ter no mínimo 8 caracteres, ' +
           'letra maiúscula e minúscula, ' +
-          'número e caracter especial'
+          'número e caractere especial'
       ),
 
     confirmPassword: Yup.string()
@@ -71,8 +71,7 @@ export default function Register() {
 
   return (
     <S.Container>
-      <S.LoginImage />
-      <S.ContainerItens>
+      <S.ContainerItems>
         <img
           src="assets/logo-desktop.svg"
           alt="logo desktop"
@@ -129,7 +128,7 @@ export default function Register() {
         <S.SignInLink>
           Already have an account? <a href="/login">Login</a>
         </S.SignInLink>
-      </S.ContainerItens>
+      </S.ContainerItems>
     </S.Container>
   )
 }

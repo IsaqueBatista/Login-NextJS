@@ -14,14 +14,13 @@ export const Container = styled.div`
 
   justify-content: space-around;
 `
-export const ContainerItens = styled.div`
+export const ContainerItems = styled.div`
   display: flex;
   flex-direction: column;
   background: wheat;
   padding: 10px;
   width: 400px;
 
-  /* width: 100%; */
   max-width: 450px;
   min-height: 300px;
   padding: 2.5rem 3rem;
@@ -39,11 +38,24 @@ export const H1 = styled.h1`
   margin: 20px 0 40px;
 `
 
+export const P = styled.p`
+  font-size: 1.8rem;
+  color: ${theme.primaryColor};
+
+  span {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    color: rgb(66, 59, 60);
+  }
+`
+
 export const Button = styled.button`
   width: 50%;
   height: 6rem;
   font-size: 2.3rem;
   font-weight: 500;
+
   font-family: Poppins, sans-serif;
   border: 0.1rem solid rgb(249, 168, 38);
   border-radius: 1rem;
@@ -58,14 +70,4 @@ export const Button = styled.button`
     filter: contrast(105%);
   }
 `
-export const P = styled.p`
-  font-size: 1.8rem;
-  color: ${theme.primaryColor};
-
-  span {
-    font-weight: 600;
-    font-style: normal;
-    font-size: 18px;
-    color: rgb(66, 59, 60);
-  }
-`
+export default Container

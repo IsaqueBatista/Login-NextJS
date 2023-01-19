@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router'
 import * as React from 'react'
-import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { toast } from 'react-toastify'
 
@@ -35,13 +34,13 @@ export default function Login() {
         8,
         'A senha deve ter mínimo de 8 dígitos, ' +
           'letra maiúscula e minúscula, ' +
-          'número e caracter especial.'
+          'número e caractere especial.'
       )
       .matches(
         /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/,
         'A senha deve ter mínimo de 8 dígitos, ' +
           'letra maiúscula e minúscula, ' +
-          'número e caracter especial.'
+          'número e caractere especial.'
       )
   }).required()
 
@@ -63,33 +62,18 @@ export default function Login() {
     )
 
     if (userExists) {
-      toast.success('Seja Bem Vindo!')
+      toast.success('Seja Bem-Vindo!')
       localStorage.setItem('token', generateToken(12))
       localStorage.setItem('email', data.email)
       router.push('/')
     } else {
       toast.error('Email ou senha inválidos')
     }
-
-    // const userExists = usersList.find((user: User) => {
-    //   if (
-    //     user.email === data.email &&
-    //     window.atob(user.password) === data.password
-    //   ) {
-    //     toast.success('Seja Bem Vindo!')
-    //     localStorage.setItem('token', generateToken(12))
-    //     localStorage.setItem('email', data.email)
-    //     router.push('/')
-    //   } else {
-    //     toast.error('Email ou senha inválidos')
-    //   }
-    // })
   }
 
   return (
     <S.Container>
-      <S.LoginImage />
-      <S.ContainerItens>
+      <S.ContainerItems>
         <img
           src="assets/logo-desktop.svg"
           alt="logo desktop"
@@ -103,7 +87,6 @@ export default function Login() {
           <S.Label>
             Email
             <S.Input
-              // name="email"
               type="email"
               placeholder="Email"
               {...register('email', { required: true })}
@@ -130,7 +113,7 @@ export default function Login() {
           hyperLink="Here"
           link="/register"
         />
-      </S.ContainerItens>
+      </S.ContainerItems>
     </S.Container>
   )
 }

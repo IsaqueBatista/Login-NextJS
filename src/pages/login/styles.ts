@@ -13,9 +13,7 @@ export const Container = styled.div`
   justify-content: space-around;
 `
 
-export const LoginImage = styled.img``
-
-export const ContainerItens = styled.div`
+export const ContainerItems = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,7 +74,6 @@ export const Input = styled.input`
   border-image: initial;
   border-bottom: none;
   border-bottom: 0.1rem solid rgb(66, 59, 50);
-  /* margin-bottom: 20px; */
   outline: none;
 
   ::placeholder {
@@ -93,12 +90,4 @@ export const Button = styled.button`
   border: none;
   margin: 10px 0;
 `
-
-// export const SignInLink = styled.p`
-//   margin-top: 10px;
-//   text-align: center;
-//   font-size: 13px;
-//   a {
-//     color: rgb(249, 168, 38);
-//   }
-// `
+export default Container

@@ -13,9 +13,7 @@ export const Container = styled.div`
   justify-content: space-around;
 `
 
-export const LoginImage = styled.img``
-
-export const ContainerItens = styled.div`
+export const ContainerItems = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,8 +55,6 @@ export const Label = styled.p`
   span {
     color: red;
     font-size: 13px;
-    /* display: block;
-    position: absolute; */
   }
 `
 
@@ -100,3 +96,4 @@ export const SignInLink = styled.p`
     color: rgb(249, 168, 38);
   }
 `
+export default Container

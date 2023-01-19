@@ -46,8 +46,8 @@ export default function Home() {
   return (
     <>
       <S.Container>
-        <S.ContainerItens>
-          <S.H1>Seja Bem Vindo ao Grupo GCB!</S.H1>
+        <S.ContainerItems>
+          <S.H1>Seja Bem-Vindo ao Grupo GCB!</S.H1>
           <S.P>
             <span>Name: </span>
             {user.name}
@@ -59,7 +59,7 @@ export default function Home() {
           <Button type="submit" handleLogout={handleLogout}>
             Logout
           </Button>
-        </S.ContainerItens>
+        </S.ContainerItems>
       </S.Container>
     </>
   )
