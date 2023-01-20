@@ -47,7 +47,7 @@ export default function Home() {
     <>
       <S.Container>
         <S.ContainerItems>
-          <S.H1>Seja Bem-Vindo ao Grupo GCB!</S.H1>
+          <S.H1>Seja Bem-Vindo!</S.H1>
           <S.P>
             <span>Name: </span>
             {user.name}
