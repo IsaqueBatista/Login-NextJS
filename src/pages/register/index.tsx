@@ -72,12 +72,12 @@ export default function Register() {
   return (
     <S.Container>
       <S.ContainerItems>
-        <img
+        {/* <img
           src="assets/logo-desktop.svg"
           alt="logo desktop"
           width={250}
           height={100}
-        />
+        /> */}
 
         <S.H1>Register</S.H1>
         <form noValidate onSubmit={handleSubmit(onSubmit)}>

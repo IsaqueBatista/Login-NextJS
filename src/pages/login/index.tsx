@@ -74,12 +74,12 @@ export default function Login() {
   return (
     <S.Container>
       <S.ContainerItems>
-        <img
+        {/* <img
           src="assets/logo-desktop.svg"
           alt="logo desktop"
           width={250}
           height={100}
-        />
+        /> */}
 
         <S.H1>Login</S.H1>
 
