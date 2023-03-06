@@ -1,4 +1,4 @@
-<h1>Projeto Login GCB em andamento</h1>
+<h1>Login & Cadastro/h1>
 
 > Página de Login
 <br>
